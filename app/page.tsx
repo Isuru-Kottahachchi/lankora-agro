@@ -122,7 +122,7 @@ export default function Home() {
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
               Global Agricultural Exporter
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-white drop-shadow-lg">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-white" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.6), 0 4px 16px rgba(0,0,0,0.4)' }}>
               {t('hero.title', language)}
             </h1>
             <p className="text-xl md:text-2xl text-white/80 text-balance max-w-2xl mx-auto drop-shadow">
