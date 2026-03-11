@@ -151,7 +151,7 @@ export default function Home() {
       </section>
 
       {/* Spice Image Strip */}
-      <section className="border-b border-border overflow-hidden bg-muted/20">
+      {/* <section className="border-b border-border overflow-hidden bg-muted/20">
         <div className="flex">
           {[
             { src: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=600&q=80', label: 'Spices' },
@@ -176,7 +176,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Featured Products */}
       <section className="py-20 md:py-28 border-b border-border">
