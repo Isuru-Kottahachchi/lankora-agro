@@ -118,10 +118,10 @@ export default function Home() {
         {/* Hero Content */}
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
           <div className="text-center space-y-6 md:space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 border border-white/25 text-white text-sm font-medium backdrop-blur-sm mb-2">
+            {/* <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 border border-white/25 text-white text-sm font-medium backdrop-blur-sm mb-2">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
               Global Agricultural Exporter
-            </div>
+            </div> */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight text-white" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.6), 0 4px 16px rgba(0,0,0,0.4)' }}>
               {t('hero.title', language)}
             </h1>
@@ -179,7 +179,7 @@ export default function Home() {
       </section> */}
 
       {/* Featured Products */}
-      <section className="py-20 md:py-28 border-b border-border">
+      <section className="py-20 md:pt-10 md:pb-28 border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Featured Product Categories</h2>
