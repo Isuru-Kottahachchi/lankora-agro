@@ -155,7 +155,7 @@ export default function ProductsPage() {
       </nav>
 
       {/* Product Categories */}
-      <section className="py-20 md:pt-10 md:pb-28">
+      <section className="pb-20 pt-10 md:pt-10 md:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
           {productCategories.map((category) => (
             <div key={category.id} id={category.id} className="scroll-mt-20">

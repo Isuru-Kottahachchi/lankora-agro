@@ -5,6 +5,7 @@ import { useLanguage } from '@/components/providers';
 import { t, languages, type Language } from '@/lib/i18n';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export function Navigation() {
@@ -25,9 +26,16 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo/Brand */}
-          <div className="flex items-center gap-2">
-            <Link href="/" className="text-xl md:text-2xl font-bold text-accent tracking-tight">
-              🌿 LANKORA AGRO
+          <div className="flex items-center gap-2 ml-6 md:ml-12">
+            <Link href="/">
+              <Image
+                src="/Lankora-Agro-Logo.png"
+                alt="Lankora Agro"
+                width={160}
+                height={160}
+                className="h-10 md:h-12 w-auto object-contain"
+                priority
+              />
             </Link>
           </div>
 
