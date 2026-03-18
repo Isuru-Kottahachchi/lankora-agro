@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://lankoraagro.com',
     siteName: 'Lankora Agro',
-    title: 'Lankora Agro - Premium Spices & Agricultural Export',
+    title: 'Lankora Agro - From Lankan Soil to the World',
     description: 'Global exporter of premium spices, herbs, and agricultural products with 50+ years of excellence',
   },
   icons: {
