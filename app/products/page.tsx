@@ -31,7 +31,7 @@ export default function ProductsPage() {
         },
         {
           name: t('spices.pepper', language),
-          image: 'https://images.unsplash.com/photo-1506368249639-73a05d6f6488?w=400&q=80',
+          image: '/Black-pepper.jpg',
           description: 'Freshly ground black pepper with sharp and peppery taste',
           uses: ['Seasoning', 'Cooking', 'Food processing'],
         },
@@ -40,6 +40,24 @@ export default function ProductsPage() {
           image: 'https://images.unsplash.com/photo-1638436462680-1b2b76fbe7fa?w=400&q=80',
           description: 'Whole cloves with distinctive aromatic flavor',
           uses: ['Spice blends', 'Beverages', 'Traditional use'],
+        },
+        {
+          name: 'Chilli Flakes',
+          image: '/Dried-Chillie-Flakes.jpg',
+          description: 'Crushed dried chilli flakes with bold heat and vibrant color',
+          uses: ['Pizza seasoning', 'Marinades', 'Sauces'],
+        },
+        {
+          name: 'Turmeric',
+          image: 'https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=400&q=80',
+          description: 'Premium turmeric powder and roots with rich golden color',
+          uses: ['Curries', 'Health drinks', 'Natural coloring'],
+        },
+        {
+          name: 'Cardamom',
+          image: 'https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=400&q=80',
+          description: 'Green cardamom pods with sweet, aromatic fragrance',
+          uses: ['Tea blends', 'Desserts', 'Spice mixes'],
         },
       ],
     },
