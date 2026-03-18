@@ -16,7 +16,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Lankora Agro - Premium Spices & Agricultural Export',
+  title: 'Lankora Agro - From Lankan Soil to the World',
   description: 'Global exporter of premium spices, herbs, grains, and natural products. ISO 9001 & HACCP certified. Serving Europe, Middle East, and worldwide markets with quality and reliability.',
   keywords: 'spices, herbs, agriculture products, export, global trade, premium quality',
   generator: 'v0.app',
