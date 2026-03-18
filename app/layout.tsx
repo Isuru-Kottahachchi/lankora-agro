@@ -29,21 +29,8 @@ export const metadata: Metadata = {
     description: 'Global exporter of premium spices, herbs, and agricultural products with 50+ years of excellence',
   },
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
+    icon: '/Lankora-Agro-Logo.png',
+    apple: '/Lankora-Agro-Logo.png',
   },
 }
 
