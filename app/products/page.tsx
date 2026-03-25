@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useLanguage } from '@/components/providers';
 import { t } from '@/lib/i18n';
 import { Navigation } from '@/components/navigation';
@@ -18,42 +19,49 @@ export default function ProductsPage() {
       description: 'Premium spices sourced from the finest farms, offering authentic flavors and aromas.',
       products: [
         {
+          slug: 'chili-powder',
           name: t('spices.chili', language),
           image: 'https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?w=400&q=80',
           description: 'Pure chili powder with vibrant color and authentic taste',
           uses: ['Cooking', 'Seasoning', 'Industrial use'],
         },
         {
+          slug: 'cinnamon',
           name: t('spices.cinnamon', language),
-          image: 'https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=400&q=80',
+          image: '/cinnamon-sticks-background.jpg',
           description: 'Premium cinnamon sticks and powder with warm, sweet aroma',
           uses: ['Beverages', 'Baking', 'Traditional medicine'],
         },
         {
+          slug: 'black-pepper',
           name: t('spices.pepper', language),
           image: '/Black-pepper.jpg',
           description: 'Freshly ground black pepper with sharp and peppery taste',
           uses: ['Seasoning', 'Cooking', 'Food processing'],
         },
         {
+          slug: 'cloves',
           name: t('spices.cloves', language),
-          image: 'https://images.unsplash.com/photo-1638436462680-1b2b76fbe7fa?w=400&q=80',
+          image: 'Cloves.jpg',
           description: 'Whole cloves with distinctive aromatic flavor',
           uses: ['Spice blends', 'Beverages', 'Traditional use'],
         },
         {
+          slug: 'chilli-flakes',
           name: 'Chilli Flakes',
           image: '/Dried-Chillie-Flakes.jpg',
           description: 'Crushed dried chilli flakes with bold heat and vibrant color',
           uses: ['Pizza seasoning', 'Marinades', 'Sauces'],
         },
         {
+          slug: 'turmeric',
           name: 'Turmeric',
           image: 'https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?w=400&q=80',
           description: 'Premium turmeric powder and roots with rich golden color',
           uses: ['Curries', 'Health drinks', 'Natural coloring'],
         },
         {
+          slug: 'cardamom',
           name: 'Cardamom',
           image: 'https://images.unsplash.com/photo-1532336414038-cf19250c5757?w=400&q=80',
           description: 'Green cardamom pods with sweet, aromatic fragrance',
@@ -69,18 +77,35 @@ export default function ProductsPage() {
       description: 'Dried herbs and aromatic products of exceptional quality.',
       products: [
         {
+          slug: 'dried-herbs',
           name: t('herbs.dried', language),
           image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80',
           description: 'Carefully dried herbs maintaining their nutritional value',
           uses: ['Cooking', 'Herbal remedies', 'Cosmetics'],
         },
         {
+          slug: 'herbal-teas',
           name: t('herbs.tea', language),
           image: 'https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&q=80',
           description: 'Premium herbal tea blends for wellness and flavor',
           uses: ['Beverages', 'Health supplements', 'Hospitality'],
         },
         {
+          slug: 'tea',
+          name: 'Tea',
+          image: 'https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?w=400&q=80',
+          description: 'Carefully selected loose-leaf tea with rich aroma and balanced taste',
+          uses: ['Hot beverages', 'Iced tea', 'Retail packs'],
+        },
+        {
+          slug: 'tea-bags',
+          name: 'Tea Bags',
+          image: 'https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=400&q=80',
+          description: 'Convenient tea bags with consistent flavor for home and hospitality use',
+          uses: ['Hotels', 'Restaurants', 'Daily consumption'],
+        },
+        {
+          slug: 'aroma-products',
           name: t('herbs.aroma', language),
           image: 'https://images.unsplash.com/photo-1600857062241-98e5dba7f2e2?w=400&q=80',
           description: 'Natural aroma products for personal and commercial use',
@@ -96,18 +121,21 @@ export default function ProductsPage() {
       description: 'Quality grains, seeds, and pulses for agricultural and food industry.',
       products: [
         {
+          slug: 'grains',
           name: t('agriculture.grains', language),
           image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&q=80',
           description: 'Premium grains including rice, wheat, and cereals',
           uses: ['Food processing', 'Animal feed', 'Industrial use'],
         },
         {
+          slug: 'seeds',
           name: t('agriculture.seeds', language),
           image: 'https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=400&q=80',
           description: 'High-quality seeds for agricultural cultivation',
           uses: ['Farming', 'Oil extraction', 'Food production'],
         },
         {
+          slug: 'pulses',
           name: t('agriculture.pulses', language),
           image: 'https://images.unsplash.com/photo-1515543904379-3d757afe72e4?w=400&q=80',
           description: 'Assorted pulses and legumes rich in nutrition',
@@ -123,12 +151,14 @@ export default function ProductsPage() {
       description: 'Plant-based and natural health products.',
       products: [
         {
+          slug: 'oils-and-extracts',
           name: t('natural.oils', language),
           image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=400&q=80',
           description: 'Pure extracted oils and natural concentrates',
           uses: ['Cooking', 'Cosmetics', 'Health supplements'],
         },
         {
+          slug: 'health-supplements',
           name: t('natural.health', language),
           image: 'https://images.unsplash.com/photo-1512069772995-ec65ed45afd6?w=400&q=80',
           description: 'Natural health supplements and wellness products',
@@ -142,19 +172,15 @@ export default function ProductsPage() {
     <main className="min-h-screen bg-background text-foreground">
       <Navigation />
 
-      {/* Header */}
       <section className="py-8 md:py-12 border-b border-border/30 bg-gradient-to-br from-accent/5 to-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">
-            Our Product Range
-          </h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Our Product Range</h1>
           <p className="text-base text-foreground/60 max-w-2xl">
             Comprehensive collection of premium agricultural products for global markets
           </p>
         </div>
       </section>
 
-      {/* Category Nav */}
       <nav className="sticky top-0 z-40 bg-background/95 backdrop-blur border-b border-border/40 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-1 overflow-x-auto scrollbar-none py-0">
@@ -172,7 +198,6 @@ export default function ProductsPage() {
         </div>
       </nav>
 
-      {/* Product Categories */}
       <section className="pb-20 pt-10 md:pt-10 md:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
           {productCategories.map((category) => (
@@ -192,16 +217,21 @@ export default function ProductsPage() {
                     <h2 className="text-3xl md:text-4xl font-bold text-white">{category.title}</h2>
                   </div>
                 </div>
-                <p className="text-lg text-foreground/60 max-w-2xl">
+                <p
+                  className={`text-lg text-foreground/60 ${
+                    category.id === 'spices' ? 'max-w-none md:whitespace-nowrap' : 'max-w-2xl'
+                  }`}
+                >
                   {category.description}
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {category.products.map((product, idx) => (
-                  <div
-                    key={idx}
-                    className="rounded border border-border/50 hover:border-accent hover:bg-muted/30 transition overflow-hidden"
+                {category.products.map((product) => (
+                  <Link
+                    key={product.slug}
+                    href={`/products/${product.slug}`}
+                    className="block rounded border border-border/50 hover:border-accent hover:bg-muted/30 transition overflow-hidden"
                   >
                     <div className="relative w-full h-40 overflow-hidden">
                       <Image
@@ -213,27 +243,20 @@ export default function ProductsPage() {
                       />
                     </div>
                     <div className="p-6 space-y-4">
-                      <h3 className="text-xl font-semibold text-accent">
-                        {product.name}
-                      </h3>
+                      <h3 className="text-xl font-semibold text-accent">{product.name}</h3>
                       <p className="text-foreground/60">{product.description}</p>
                       <div className="space-y-2">
-                        <p className="text-sm font-semibold text-foreground/70">
-                          Applications:
-                        </p>
+                        <p className="text-sm font-semibold text-foreground/70">Applications:</p>
                         <div className="flex flex-wrap gap-2">
                           {product.uses.map((use, i) => (
-                            <span
-                              key={i}
-                              className="px-3 py-1 text-xs rounded-full bg-muted text-foreground/70"
-                            >
+                            <span key={i} className="px-3 py-1 text-xs rounded-full bg-muted text-foreground/70">
                               {use}
                             </span>
                           ))}
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -241,7 +264,6 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Additional Features */}
       <section className="py-20 md:py-28 bg-muted/30 border-y border-border/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 space-y-4">
